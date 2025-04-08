@@ -45,14 +45,18 @@ return (
     <div className="min-h-screen flex">
       {/* Left - Login */}
       <div className="flex-1 flex items-center justify-center px-4">
-        <div className="p-8 rounded-lg w-full max-w-md text-white">
-          <h1 className="text-2xl font-semibold mb-2">Welcome back to Room.me!</h1>
-          <p className="text-gray-400 mb-6 text-sm">
+        <div className="p-12 rounded-lg w-full max-w text-white">
+          <div className="flex items-center mb-6 space-x-2">
+            <img src="/img/Navigation-item.png" alt="Room.me Logo" className="w-6 h-6" />
+            <h2 className="text-white font-semibold text-lg">ROOM.ME</h2>
+          </div>
+          <h1 className="text-[40px] font-semibold mb-2">Welcome back to Room.me!</h1>
+          <p className="text-gray-400 mb-6 text-[20px]">
             Room.me is an innovative video conference product that revolutionizes virtual meetings.
           </p>
           <form onSubmit={handleLogin}>
-            <Input label="Email address" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-            <Input label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <Input label="Email address" type="email" placeholder='Enter your email address' value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <Input label="Password" type="password" placeholder='Enter your password' value={password} onChange={(e) => setPassword(e.target.value)} />
             {error && <p className="text-red-400 text-sm mb-2">{error}</p>}
             <Button type="submit" loading={loading}>Sign in</Button>
           </form>
@@ -61,10 +65,10 @@ return (
             Sign in with Google
           </button>
           <div className="flex justify-between items-center mt-3 text-sm">
-            <label><input type="checkbox" className="mr-1" /> Remember for 30 days</label>
-            <a href="#" className="text-purple-400 hover:underline">Forgot password</a>
+            <label><input type="checkbox" className="mr-1 text-[14px]" /> Remember for 30 days</label>
+            <a href="#" className="text-purple-400 hover:underline text-[14px]">Forgot password</a>
           </div>
-          <p className="mt-4 text-sm">Doesn’t have account? <a href="#" className="text-purple-400 hover:underline">Sign up</a></p>
+          <p className="mt-4 text-[16px] text-center">Doesn’t have account? <a href="#" className="text-purple-400 hover:underline">Sign up</a></p>
         </div>
       </div>
   
