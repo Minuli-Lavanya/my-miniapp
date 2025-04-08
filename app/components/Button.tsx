@@ -6,7 +6,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = ({ children, loading, ...props }: ButtonProps) => (
   <button
-    className="w-full bg-purple-400 hover:bg-purple-600 text-white py-2 px-4 rounded"
+    className="w-full bg-[#8B80FF] hover:bg-purple-400 text-white py-2 px-4 rounded"
     {...props}
     disabled={loading}
   >

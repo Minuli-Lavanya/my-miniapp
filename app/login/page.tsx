@@ -66,9 +66,9 @@ return (
           </button>
           <div className="flex justify-between items-center mt-3 text-sm">
             <label><input type="checkbox" className="mr-1 text-[14px]" /> Remember for 30 days</label>
-            <a href="#" className="text-purple-400 hover:underline text-[14px]">Forgot password</a>
+            <a href="#" className="text-[#8B80FF] hover:underline text-[14px]">Forgot password</a>
           </div>
-          <p className="mt-4 text-[16px] text-center">Doesn’t have account? <a href="#" className="text-purple-400 hover:underline">Sign up</a></p>
+          <p className="mt-4 text-[16px] text-center">Doesn’t have account? <a href="#" className="text-[#8B80FF] hover:underline">Sign up</a></p>
         </div>
       </div>
   
